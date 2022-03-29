@@ -1,6 +1,6 @@
 ## M-Learning android application for Computer Programming
 ### Description
-The present project deals with the development of an Educational Application for practice in the course: Development of Applications in a Programming Environment (AEPP), which is taught in the senior year of greek high school. It aims to be a complete and directly accessible, via mobile phones, training assistant. Specifically, this application gives users the ability to study computer programming theory as well as to practice through activities presented in the form of challenges. A particular emphasis has been placed on recording and displaying user progress and performance. Finally, this application incorporates gamification techniques such as a user ranking (Leaderboard).
+The present project deals with the development of an Educational Application for practice in the course: Development of Applications in a Programming Environment (AEPP), which is taught in the senior year of greek high school. It aims to be a complete and directly accessible, via mobile phones, training assistant. Specifically, this application gives users the ability to study computer programming theory as well as to practice through activities presented in the form of challenges. A particular emphasis has been placed on recording and displaying user progress and performance. Finally, this application incorporates gamification techniques such as user ranking (Leaderboard).
 
 ### Technologies
 This project was built using Android Studio along with Firebase.
