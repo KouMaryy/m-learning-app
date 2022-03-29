@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_circle_seperator_background"
+    tools:context=".Activities.StartElementTestActivity">
+
+
+    <ImageView
+        android:id="@+id/ic_backB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:onClick="clickBackB"
+        android:padding="15dp"
+        android:src="@drawable/ic_back_orange"
+        app:layout_constraintBottom_toTopOf="@+id/disclaimer1"
+        app:layout_constraintEnd_toStartOf="@+id/disclaimer1"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="@+id/disclaimer1" />
+
+    <TextView
+        android:id="@+id/disclaimer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="68dp"
+        android:drawableStart="@drawable/ic_bookmark_filled_black"
+        android:drawablePadding="10dp"
+        android:text="@string/challenge_str"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/disclaimer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Αποθηκευμένων Ερωτήσεων"
+        android:textColor="@color/theme"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@+id/disclaimer1"
+        app:layout_constraintTop_toBottomOf="@+id/disclaimer1" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/startTestB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_questions" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="bottom"
+                    android:text="@string/questions"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/totalTestQuestB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="bottom"
+                    android:text="5"
+                    android:textColor="@color/theme"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startTestB"
+        android:layout_width="116dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="140dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/start"
+        android:onClick="startTheTestB"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/alert"
+        app:layout_constraintTop_toBottomOf="@+id/startTestB"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_margin="15dp"
+        android:text="@string/bookmarked_ones_discl"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

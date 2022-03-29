@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lilac">#E3E8FF</color>
+    <color name="grey">#616161</color>
+
+
+    <color name="theme">#FF815A</color>
+    <color name="orangeTint">#85FF9646</color>
+    <color name="gradientStart">#FFAC46</color>
+    <color name="gradientCenter">#FAA87A</color>
+    <color name="gradientEnd">#F8956E</color>
+    <color name="gradientStartLight">#FFCA8A</color>
+    <color name="gradientCenterLight">#FBC3A3</color>
+    <color name="gradientEndLight">#FAB599</color>
+    <color name="light_theme">#FFE6C6</color>
+    <color name="selected">#FFD199</color>
+    <color name="answered">#6C5BFF</color>
+    <color name="notAnswered">#FFD53B</color>
+    <color name="notVisited">#FFFFFF</color>
+    <color name="infoDrwrBack">#B5FB9A22</color>
+    <color name="magenta">#E3659F</color>
+    <color name="right">#89FF00</color>
+    <color name="wrong">#FF0033</color>
+    <color name="unattempted">#FFDD00</color>
+    <color name="transparent">#00FF815A</color>
+    <color name="indexBack">#BEF8F0E3</color>
+    <color name="indexGreetBack">#F8ECD8</color>
+    <color name="disbledBtn">#32000000</color>
+
+
+</resources>

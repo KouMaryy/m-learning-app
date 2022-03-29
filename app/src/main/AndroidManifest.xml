@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unipi.p17053.ahelpp">
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ahelpp">
+        <activity android:name=".Activities.ViewPreviousExamsActivity"></activity>
+        <activity android:name=".Activities.PreviousExamsActivity" />
+        <activity android:name=".Activities.ViewStayPositiveActivity" />
+        <activity android:name=".Activities.StayPositiveActivity" />
+        <activity android:name=".Activities.ToTheTopActivity" />
+        <activity android:name=".Activities.StartElementTestActivity" />
+        <activity android:name=".Activities.ElementTestScoreActivity" />
+        <activity android:name=".Activities.ElementTestQuestionsActivity" />
+        <activity android:name=".Activities.ViewTheoryActivity" />
+        <activity android:name=".Activities.AnswersActivity" />
+        <activity android:name=".Activities.LeaderboardActivity" />
+        <activity android:name=".Activities.BookmarkedQActivity" />
+        <activity android:name=".Activities.MyPerformanceActivity" />
+        <activity android:name=".Activities.TestScoreActivity" />
+        <activity android:name=".Activities.ChallengesActivity" />
+        <activity android:name=".Activities.TestQuestionsActivity" />
+        <activity android:name=".Activities.Test" />
+        <activity android:name=".Activities.StartTestActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.SignupActivity" />
+        <activity android:name=".Activities.SplashActivity">
+
+            <!-- App's entry point -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Theory" />
+        <activity android:name=".Activities.About" />
+        <activity android:name=".Activities.Index" />
+    </application>
+
+</manifest>

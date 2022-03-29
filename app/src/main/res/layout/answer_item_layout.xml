@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_view"
+
+    android:elevation="5dp"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/unbookOption"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_bookmark_filled_black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:background="@color/black"
+            android:id="@+id/questionNo"
+            android:textColor="@color/white"
+            android:text="Ερώτηση 1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginLeft="145dp"
+            android:textStyle="bold"
+            android:id="@+id/result"
+            android:textColor="@color/right"
+            android:text="Αναπάντητη " />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/browser_actions_divider_color"/>
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/question"
+        android:layout_marginBottom="8dp"
+        android:text="Περιγραφή " />-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/question"
+        android:layout_marginBottom="8dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/browser_actions_divider_color"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:id="@+id/answerA"
+        android:text="A : aa " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:id="@+id/answerB"
+        android:text="B : bb " />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:id="@+id/answerC"
+        android:text="C : cc" />
+
+</LinearLayout>

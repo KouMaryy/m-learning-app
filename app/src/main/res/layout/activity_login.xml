@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_effect"
+    tools:context=".Activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:layout_marginTop="60dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/myAppName"
+        android:fontFamily="@font/funcity"
+        android:text="@string/a_help_p"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myCopyright"
+        android:text="@string/_2022"
+        android:layout_below="@+id/myAppName"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/ic_copyright"
+        android:drawablePadding="5dp"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:id="@+id/email"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="115dp"
+        android:ems="10"
+        android:background="@color/orangeTint"
+        android:textColorHint= "@color/white"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:drawableLeft="@drawable/ic_face"
+        android:drawablePadding="8dp"
+        android:textSize="16dp"
+        android:textCursorDrawable="@color/white"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/emptyEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_centerInParent="true"
+        android:text="@string/emptyField"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:drawableLeft="@drawable/ic_error"
+        android:drawablePadding="5dp"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/password"
+        android:padding="8dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:background="@color/orangeTint"
+        android:textColorHint= "@color/white"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:textSize="16dp"
+        android:textCursorDrawable="@color/white"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/emptyPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerInParent="true"
+        android:text="@string/emptyField"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:drawableLeft="@drawable/ic_error"
+        android:drawablePadding="5dp"
+        android:visibility="invisible"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="135dp"
+        android:layout_height="57dp"
+        android:id="@+id/cardToButton"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:onClick="clickLogin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/login"
+               android:textColor="@color/white"
+               android:layout_centerInParent="true"
+               android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardToButton"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpDisc"
+            android:text="@string/signupDisc"
+            android:textColor="@color/white"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp"
+            android:onClick="clickSignup"
+            android:text="@string/signup"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/signUpDisc"
+            android:paddingLeft="8dp"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

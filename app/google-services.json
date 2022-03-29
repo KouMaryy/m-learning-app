@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "791691930727",
+    "project_id": "ahelpp-e2abf",
+    "storage_bucket": "ahelpp-e2abf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:791691930727:android:8837ee581cc2b1e60f38c2",
+        "android_client_info": {
+          "package_name": "com.unipi.p17053.ahelpp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "791691930727-t0gljgupjjhne8j4stg1q5ns3k66dkaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "<your-api-key>"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "791691930727-t0gljgupjjhne8j4stg1q5ns3k66dkaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
